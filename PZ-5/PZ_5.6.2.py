@@ -9,12 +9,14 @@ def Power(A, B):
         return 0
     else:
         result = math.exp(B * math.log(A))
-        return result
+        return round(result, 2) #round() округляет result до двух точек
+
 
 P = int(input("Введите число P: "))
 A = int(input("Введите число A: "))
 B = int(input("Введите число B: "))
 C = int(input("Введите число C: "))
+
 
 
 result_A = Power(A, P)
