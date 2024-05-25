@@ -4,9 +4,9 @@ import re
 
 with open('price.txt', 'r') as file:
     text = file.read()
-    prices = re.findall(r'[0-9]+', text)
+    price = re.findall(r'[0-9]+', text)
 
-    print(prices)
-    count = len(prices)
+    print(price)
+    count = len(price)
 
     print("Количество ценников:", count)

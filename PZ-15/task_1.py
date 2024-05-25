@@ -69,7 +69,7 @@ with sq.connect('poruch.db') as con:
 
     with sq.connect('poruch.db') as con:
         cur = con.cursor()
-        cur.execute("DELETE FROM poruchenie WHERE id==1")
+        cur.execute("DELETE FROM poruchenie WHERE id==3")
         cur.execute("SELECT * FROM poruchenie")
         result_8 = cur.fetchall()
         print(f"\n{result_8}")
