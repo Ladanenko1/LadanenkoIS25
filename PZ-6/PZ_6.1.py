@@ -2,7 +2,7 @@
 def print_elements_in_pattern(List):
     left = 0
     right = len(A) - 1
-    while left <= right: #while для того чтобы пока left меньше или равен right, она будет выполнять функцию
+    while left <= right:
         if left == right:
             print(A[left])
         else:

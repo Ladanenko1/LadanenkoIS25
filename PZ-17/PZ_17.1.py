@@ -1,6 +1,7 @@
+#Повторить максимально приближено по интерфейсу с помощью tkkinter  https://www.zoho.com/creator/images/subpages/htmlforms/workshop_registration.gif
 import tkinter as tk
 from tkinter import StringVar, OptionMenu
-# Создаем основное окно приложения
+
 root = tk.Tk()
 
 
@@ -31,7 +32,7 @@ selected_option.set("Выберите область")
 
 options = ["Ростовская область", "московская область", "Краснодарский Край"]
 
-# Создание виджета OptionMenu
+
 option_menu = OptionMenu(root, selected_option, *options)
 option_label = tk.Label(root, text ='Регион')
 
@@ -41,7 +42,7 @@ selecte_option.set("Выберите страну")
 
 optionss = ["Россия", "Украина", "Беларусь"]
 
-# Создание виджета OptionMenu
+
 con_menu = OptionMenu(root, selecte_option, *optionss)
 con_label= tk.Label(root, text ='Страна')
 
@@ -55,7 +56,7 @@ select_option.set("Выберите предпочтения в еде")
 
 optionsss = ["сладкое", "соленое", "острое"]
 
-# Создание виджета OptionMenu
+
 food_menu = OptionMenu(root, select_option, *optionsss)
 food_label= tk.Label(root, text ='Еда')
 
@@ -72,7 +73,7 @@ name_bank_entry = tk.Entry(root)
 zp = tk.Label(root,text ='День зарплаты')
 zp_entry = tk.Entry(root)
 
-# # Размещаем элементы на основном окне
+
 f_name_label.grid(row=0, column=0, pady=5)
 f_name_entry.grid(row=0, column=1, pady=5)
 
@@ -121,5 +122,5 @@ root.title("Резюме")
 root.resizable(False, False)
 root.geometry('800x500')
 
-# Запускаем основное окно приложения
+
 root.mainloop()

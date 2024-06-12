@@ -16,7 +16,7 @@ class Orange(Fruit):
         super().init(name, weight)
         self.color = color
 
-apple = Apple("сися", 150, "зеленый")
+apple = Apple("кефтеме", 150, "зеленый")
 orange = Orange("абоба", 200, "оранжевый")
 print(apple.name, apple.weight, apple.color)
 print(orange.name, orange.weight, orange.color)
